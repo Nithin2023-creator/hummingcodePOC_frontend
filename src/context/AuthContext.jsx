@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       setError(null);
-      const response = await axios.post('https://hummingcode-backend-poc.vercel.app/login', {
+      const response = await axios.post('https://hummingcode-backend-poc-yuzq.vercel.app/login', {
         email,
         password,
         username: email // Your API seems to require username even for login
@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 const signup = async (username, email, password) => {
     try {
       setError(null);
-      const response = await axios.post('https://hummingcode-backend-poc.vercel.app/signup', {
+      const response = await axios.post('https://hummingcode-backend-poc-yuzq.vercel.app/signup', {
         username,
         email,
         password
